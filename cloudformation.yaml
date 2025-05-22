@@ -30,6 +30,19 @@ Resources:
         - 'arn:aws:iam::aws:policy/AWSCodeBuildAdminAccess'
         - 'arn:aws:iam::aws:policy/AmazonS3FullAccess'
         - 'arn:aws:iam::aws:policy/AWSCodeStarFullAccess'
+      Policies:
+        - PolicyName: CodeCommitAccess
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              - Effect: Allow
+                Action:
+                  - 'codecommit:GetBranch'
+                  - 'codecommit:GetCommit'
+                  - 'codecommit:UploadArchive'
+                  - 'codecommit:GetUploadArchiveStatus'
+                  - 'codecommit:CancelUploadArchive'
+                Resource: !Sub 'arn:aws:codecommit:${AWS::Region}:${AWS::AccountId}:music-generator'
 
   ArtifactBucket:
     Type: AWS::S3::Bucket
