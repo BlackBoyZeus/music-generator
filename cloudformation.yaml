@@ -13,7 +13,7 @@ Resources:
               Service: codebuild.amazonaws.com
             Action: 'sts:AssumeRole'
       ManagedPolicyArns:
-        - 'arn:aws:iam::aws:policy/AmazonECR-FullAccess'
+        - 'arn:aws:iam::aws:policy/AmazonECRFullAccess'
         - 'arn:aws:iam::aws:policy/AmazonS3FullAccess'
 
   CodePipelineServiceRole:
