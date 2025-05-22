@@ -1,0 +1,10 @@
+{
+    "parallel_workers": 4,
+    "analyze_audio": true,
+    "generate_metadata": true,
+    "api_key": "",
+    "api_type": "gemini",
+    "output_format": "json",
+    "root_dir": "/Users/blblackboyzeusackboyzeus/BBZ(AiArtist)/music_generator",
+    "log_level": "INFO"
+  }
