@@ -78,3 +78,33 @@ The system uses a combination of:
 ## License
 
 Copyright (c) 2025 BBZ(AiArtist)
+
+## Audio Catalog Structure
+
+The project includes real audio files from BBZ's music catalog:
+
+```
+data/
+└── catalog/
+    ├── Do What I Want/
+    │   ├── audio/
+    │   │   └── Do What I Want.mp3
+    │   ├── lyrics/
+    │   │   └── lyrics.txt
+    │   └── features.json
+    ├── Taste It/
+    │   ├── audio/
+    │   │   └── standardized.wav
+    │   └── features.json
+    └── Friended/
+        ├── audio/
+        │   └── Friended.wav
+        └── features.json
+```
+
+Each song includes:
+- Audio files (MP3/WAV)
+- Lyrics (when available)
+- Features metadata (tempo, key, time signature)
+
+This structure mirrors the original catalog organization while providing a clean interface for the music generation system.
